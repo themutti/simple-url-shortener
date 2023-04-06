@@ -1,3 +1,7 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^([a-zA-Z0-9]{6})\/?(\?.*)?$ /api?url=$1 [QSA]
+
+RewriteRule ^api\/?(\?.*)?$ /api.php [QSA,L]
