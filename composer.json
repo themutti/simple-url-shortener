@@ -1,0 +1,9 @@
+{
+  "name": "mutti/url-shortener",
+  "description": "A simple URL shortener",
+  "autoload": {
+    "psr-4": {
+      "App\\": "src"
+    }
+  }
+}
