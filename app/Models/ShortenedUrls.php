@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace MVC\Models;
+namespace App\Models;
 
 class ShortenedUrls extends Database {
   public function getLongUrl(string $shortenedUrl): ?ShortenedUrl {
@@ -15,7 +15,7 @@ class ShortenedUrls extends Database {
     return new ShortenedUrl($row["ID"], $row["ShortenedUrl"], $row["LongUrl"]);
   }
 
-  public function insertUrl(string $shortenedUrl, string $longUrl): void {
+  public function insertUrl(string $shortenedUrl, string $longUrl): bool {
     try {
       $stmt = $this->conn->prepare("INSERT INTO ShortenedUrls (ShortenedUrl, LongUrl) VALUES (?, ?)");
       $stmt->execute([$shortenedUrl, $longUrl]);
@@ -23,9 +23,10 @@ class ShortenedUrls extends Database {
     } catch (\PDOException $e) {
       // Ingore duplicate entry error
       if ($e->getCode() === "23000") {
-        return;
+        return false;
       }
       throw $e;
     }
+    return true;
   }
 }

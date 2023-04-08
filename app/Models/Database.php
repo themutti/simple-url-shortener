@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace MVC\Models;
+namespace App\Models;
 
 class Database {
   protected ?\PDO $conn;
