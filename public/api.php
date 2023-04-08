@@ -1,9 +1,13 @@
 <?php
 declare(strict_types=1);
 
-use MVC\Models\Database;
+require_once __DIR__ . "/../vendor/autoload.php";
 
-require_once "../src/Models/Database.php";
+require_once __DIR__ . "/../src/Models/ShortenedUrl.php";
 
-$db = new Database("localhost", "UrlShortenerDb", "root", "");
+use MVC\Models\ShortenedUrls;
+
+$db = new ShortenedUrls("localhost", "UrlShortenerDb", "root", "");
+// $db->insertUrl("bbbbbbb", "www.minecraft.net");
+$data = $db->getLongUrl("aaaaaa");
 $db->close();
