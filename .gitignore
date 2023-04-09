@@ -4,3 +4,6 @@
 
 # vendor folder
 /vendor
+
+# database credentials
+/config/credentials.ini
