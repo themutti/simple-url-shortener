@@ -1,0 +1,32 @@
+.hidden {
+  display: none;
+}
+
+
+.url-input-wrapper {
+  display: flex;
+}
+
+.url-input-wrapper input {
+  margin: 0;
+}
+
+.url-input-wrapper button {
+  width: auto;
+  margin: 0 0 0 0.5rem;
+}
+
+
+.icon-title-wrapper {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.icon-title-wrapper svg {
+  color: var(--h3-color);
+}
+
+.icon-title-wrapper h3 {
+  align-self: center;
+  margin: 0 0 0 0.7rem;
+}

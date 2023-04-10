@@ -1,12 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>URL shortener</title>
+  <title>URL Shortener</title>
+  <!-- Pico CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Scripts -->
+  <script defer src="/js/main.js"></script>
 </head>
+
 <body>
-  hello
+
+  <main class="container">
+
+    <hgroup>
+      <h1>URL Shortener</h1>
+      <h2>The most reliable URL shortener on the web</h2>
+    </hgroup>
+
+    <section>
+      <article>
+        <div class="url-input-wrapper">
+          <input type="text" placeholder="Enter your URL here">
+          <button>Shorten</button>
+        </div>
+
+        <footer class="hidden">
+          Shortened URL: <a href="#"></a>
+        </footer>
+      </article>
+    </section>
+
+    <section>
+      <div class="grid">
+        <div>
+          <div class="icon-title-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+              <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+            </svg>
+            <h3>Shorten URLs</h3>
+          </div>
+          <p>You can shorten any URL you need at any moment and share it with other people.</p>
+        </div>
+
+        <div>
+          <div class="icon-title-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M7 11v8a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1v-7a1 1 0 0 1 1 -1h3a4 4 0 0 0 4 -4v-1a2 2 0 0 1 4 0v5h3a2 2 0 0 1 2 2l-1 5a2 3 0 0 1 -2 2h-7a3 3 0 0 1 -3 -3" />
+            </svg>
+            <h3>Free</h3>
+          </div>
+          <p>All users can shorten an unlimited amount of URLs with no charges whatsoever.</p>
+        </div>
+
+        <div>
+          <div class="icon-title-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <ellipse cx="12" cy="6" rx="8" ry="3"></ellipse>
+              <path d="M4 6v6a8 3 0 0 0 16 0v-6" />
+              <path d="M4 12v6a8 3 0 0 0 16 0v-6" />
+            </svg>
+            <h3>Capacity</h3>
+          </div>
+          <p>Quickly store and retrieve over 50 bilion URLs from the highly optimized database.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <hr>
+      <p>Website realized just for fun by a lazy developer lol</p>
+    </footer>
+
+  </main>
+
 </body>
+
 </html>
