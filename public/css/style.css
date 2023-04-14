@@ -27,8 +27,12 @@
   align-items: center;
 }
 
+.url-output-text {
+  margin-right: 0.4rem;
+}
+
 #shortend-url {
-  margin-left: 0.5rem;
+  white-space: nowrap;
 }
 
 #copy-btn {
