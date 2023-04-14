@@ -26,12 +26,14 @@
     <section>
       <article>
         <div class="url-input-wrapper">
-          <input type="text" placeholder="Enter your URL here">
-          <button>Shorten</button>
+          <input id="url-input" type="text" placeholder="Enter your URL here">
+          <button id="shorten-btn">Shorten</button>
         </div>
 
-        <footer class="hidden">
-          Shortened URL: <a href="#"></a>
+        <footer id="url-output-container" class="hidden">
+          <span>Shortened URL:</span>
+          <a id="shortend-url" target="_blank" aria-busy="true"></a>
+          <a id="copy-btn" role="button" href="javascript:void(0)" class="contrast" disable>Copy</a>
         </footer>
       </article>
     </section>

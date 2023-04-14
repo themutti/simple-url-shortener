@@ -1,5 +1,9 @@
 .hidden {
-  display: none;
+  display: none !important;
+}
+
+.invalid {
+  color: var(--form-element-invalid-border-color);
 }
 
 
@@ -8,12 +12,28 @@
 }
 
 .url-input-wrapper input {
+  width: 100%;
   margin: 0;
 }
 
 .url-input-wrapper button {
   width: auto;
   margin: 0 0 0 0.5rem;
+}
+
+
+#url-output-container {
+  display: flex;
+  align-items: center;
+}
+
+#shortend-url {
+  margin-left: 0.5rem;
+}
+
+#copy-btn {
+  margin-left: auto;
+  padding: 0.2rem 0.6rem;
 }
 
 
